@@ -12,6 +12,7 @@ function App() {
           <Route path="/add" element={<Add />} />
           <Route path="/edit/:id" element={<Edit />} />
         </Routes>
+        <h1>Help</h1>
       </Router>
     </div>
   );

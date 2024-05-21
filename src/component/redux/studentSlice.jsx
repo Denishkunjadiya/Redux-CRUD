@@ -31,7 +31,7 @@ const studentSlice = createSlice({
       const editStudent = state.find((student) => student.id === id);
       if (editStudent) {
         editStudent.name = name;
-        editStudent.std = std;  
+        editStudent.std = std;
         editStudent.bod = bod;
         editStudent.school = school;
       }

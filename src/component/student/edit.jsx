@@ -10,7 +10,7 @@ const Edit = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const student = useSelector((state) => state.students);
-  const editStudents = student.filter((item) => item.id == params.id);
+  const editStudents = student.filter((item) => item.id === params.id);
   const { name, std, bod, school } = editStudents[0];
 
   const [value, setValue] = useState({
