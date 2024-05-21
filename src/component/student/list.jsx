@@ -13,7 +13,7 @@ const List = () => {
   };
   return (
     <div className="flex flex-col ">
-      <div className="flex justify-between">
+      <div className="flex justify-between mb-7">
         <h1 className="font-bold text-lg">Student List</h1>
         <Link
           to="/add"
@@ -24,37 +24,37 @@ const List = () => {
       </div>
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-          <div className="h-[69vh] overflow-y-scroll" >
+          <div className="max-h-[65vh] overflow-y-scroll" >
             <table className="min-w-full">
-              <thead className="border-b sticky bg-white top-0" >
+              <thead className="table-header-shadow sticky bg-white top-0" >
                 <tr>
                   <th
                     scope="col"
-                    className="text-xs uppercase font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-s uppercase font-bold text-gray-900 px-6 py-4 text-left"
                   >
                     Name
                   </th>
                   <th
                     scope="col"
-                    className="text-xs uppercase font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-s uppercase font-bold text-gray-900 px-6 py-4 text-left"
                   >
                     Birth of date
                   </th>
                   <th
                     scope="col"
-                    className="text-xs uppercase font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-s uppercase font-bold text-gray-900 px-6 py-4 text-left"
                   >
                     std
                   </th>
                   <th
                     scope="col"
-                    className="text-xs uppercase font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-s uppercase font-bold text-gray-900 px-6 py-4 text-left"
                   >
                     school
                   </th>
                   <th
                     colSpan={2}
-                    className="text-xs uppercase font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-s uppercase font-bold text-gray-900 px-6 py-4 text-left"
                   >
                     action
                   </th>
@@ -95,9 +95,9 @@ const List = () => {
               </tbody>
             </table>
           </div>
-        </div>
-      </div>
-    </div>
+        </div >
+      </div >
+    </div >
   );
 };
 
