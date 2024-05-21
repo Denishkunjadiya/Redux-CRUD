@@ -24,16 +24,9 @@ const List = () => {
       </div>
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-          <div style={{
-            height: "69vh",
-            overflowY: "scroll"
-          }}>
+          <div className="h-[69vh] overflow-y-scroll" >
             <table className="min-w-full">
-              <thead className="border-b" style={{
-                position: "sticky",
-                background: "white",
-                top: '0'
-              }}>
+              <thead className="border-b sticky bg-white top-0" >
                 <tr>
                   <th
                     scope="col"
