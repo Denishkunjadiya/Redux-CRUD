@@ -34,7 +34,7 @@ const Add = () => {
 
   console.log(errors);
   return (
-    <div className="px-96">
+    <div className="sm:px-32 lg:px-40 px-1">
       <div className="mb-5">
         <h1 className="font-bold text-lg ">Add Student</h1>
       </div>

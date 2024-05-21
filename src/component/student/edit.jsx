@@ -10,8 +10,8 @@ const Edit = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const student = useSelector((state) => state.students);
-  const editStudents = student.filter((item) => item.id === params.id);
-  const { name, std, bod, school } = editStudents[0];
+  const editStudents = student?.find((item) => item.id === Number(params?.id));
+  const { name, std, bod, school } = editStudents;
 
   const [value, setValue] = useState({
     name,
@@ -31,11 +31,11 @@ const Edit = () => {
         school: value.school,
       })
     );
-    console.log(value);
     navigate("/");
   };
+
   return (
-    <div className="px-96">
+    <div className="sm:px-32 lg:px-40 px-1">
       <div className="mb-5">
         <h1 className="font-bold text-lg ">Edit Student</h1>
       </div>

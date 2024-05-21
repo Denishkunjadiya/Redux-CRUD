@@ -24,11 +24,10 @@ const studentSlice = createSlice({
   reducers: {
     addStudent: (state, action) => {
       state.push(action.payload);
-      console.log(action);
     },
     editStudent: (state, action) => {
       const { id, name, std, bod, school } = action.payload;
-      const editStudent = state.find((student) => student.id === id);
+      const editStudent = state.find((student) => student.id === Number(id));
       if (editStudent) {
         editStudent.name = name;
         editStudent.std = std;
